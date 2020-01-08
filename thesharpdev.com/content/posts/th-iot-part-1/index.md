@@ -39,7 +39,7 @@ https://www.adafruit.com/product/393
 ## Installation
 The Raspberry Pi Zero doesn't a full HDMI or USB-A port. This makes it slightly harder to just hook it up to a monitor and keyboard as I didn't have the adapters. Also, I'm a bit lazy. So I looked for an option that would allow me to preconfigure SSH and Wi-Fi so I could just connect to the Pi to continue the setup.
 
-> I followed this fantastic guide: https://desertbot.io/blog/headless-raspberry-pi-4-ssh-wifi-setup/
+> I followed this [guide](https://desertbot.io/blog/headless-raspberry-pi-4-ssh-wifi-setup/)
 
 
 **The highlights are below:**
@@ -56,7 +56,7 @@ Create a file call wpa_supplicant.config in the `/boot` directory
 
 Add the following information to the `wpa_supplicant.conf` file
 
-{{< highlight bash >}}
+```ini
 country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -65,12 +65,17 @@ network={
     ssid="NETWORK-NAME"
     psk="NETWORK-PASSWORD"
 }
-{{< /highlight >}}
+```
 
 Eject the SD card, put it in the Pi, boot up, and SSH into it 😀
 
 ### Create a simple Python web service
-Ultimately we will end up using Python to talk to the sensor, but that will come later. For now, we will just create a simple web service to prove out our setup.
+Ultimately we will end up using Python to talk to the sensor, but that will come later. For now, we will just create a simple web service to prove out our setup. 
+
+> I followed this [guide](https://medium.com/ymedialabs-innovation/deploy-flask-app-with-nginx-using-gunicorn-and-supervisor-d7a93aa07c18)
+
+**I made a couple tweaks, so I'll summarize below**
+
 
 | Libraries  |
 |------------|
@@ -80,10 +85,6 @@ Ultimately we will end up using Python to talk to the sensor, but that will come
 | Gunicorn   |
 | Supervisor |
 
-
-> Another guide I used: https://medium.com/ymedialabs-innovation/deploy-flask-app-with-nginx-using-gunicorn-and-supervisor-d7a93aa07c18
-
-**I made a couple tweaks, so I'll summarize below**
 
 ### Create the App
 SSH into the Pi and install some things to get us going 
@@ -138,4 +139,4 @@ stdout_logfile=/var/log/myapp/myapp.out.log
 
 
 
-# We'll pick up the rest in Part 2
+## ⏭️  In **__[Part 2](/posts/th-iot-part-2)__** we will look at attaching the sensor and reading data

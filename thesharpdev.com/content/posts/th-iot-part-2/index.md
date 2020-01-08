@@ -4,7 +4,7 @@ date: 2020-01-05T08:47:11+01:00
 draft: false
 ---
 
-In the first part we focused on getting the operating system installed and setting up our web service. In this part we will focus on attaching the sensor and reading data from it.
+In the [part one](/posts/th-iot-part-1) we focused on getting the operating system installed and setting up our web service. In this part we will focus on attaching the sensor and reading data from it.
 
 ## Some Assembly Required
 There are several ways you can attach the sensor (e.g: bread board, connector wires, solder directly to pinouts, etc). I chose to use connector wires so I could move things around easily if I needed to.
@@ -129,4 +129,4 @@ Then it should show up something like this when you view the web page:
 
 `[01/04/2020 19:31:40] Temp=64.2°F Humidity=35.0%`
 
-# In Part 3 we will go over sending the data to the cloud
+## ⏭️  In **__[Part 3](#)__** we will go over sending the data to the cloud
