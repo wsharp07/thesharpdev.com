@@ -1,0 +1,32 @@
+name: Build & Deploy
+
+on:
+  push:
+    branches:
+    - 'master'
+    - 'build/**'
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+      with:
+        submodules: true
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.61.0'
+
+    - name: Build
+      working-directory: ./thesharpdev.com
+      run: hugo --minify
+
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: thesharpdev.com/public
