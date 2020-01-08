@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Montserrat&display=swap');
+
+p > a {
+    text-decoration: underline;
+    color: #466DB2
+}
+
+.c-title.p-title {
+    font-family: 'Bangers';
+    font-size: 7.0em;
+    font-weight: 700;
+    color: black;
+}
+
+.p-title__link {
+    color: black;
+    text-decoration: none;
+}
+
+.p-subtitle {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 2.5em;
+    color: black;
+    margin: 0;
+}
+
+p > code {
+    position: relative;
+    margin: 0 .334em;
+    padding: .334em .667em;
+    font-family: monospace,sans-serif;
+    font-size: .75em;
+    white-space: pre;
+    background: #faf9f7;
+    border: 1px solid #e5e4e1;
+    top: -2px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    font-weight: bold;
+    text-align: left;
+}

@@ -1,0 +1,56 @@
+baseurl = "https://thesharpdev.com"
+languageCode = "en-us"
+Title = "The Sharp Dev"
+copyright = "&copy; Copyright notice"
+custom_css = "/static/css/custom.css"
+
+[params]
+  paginate = 10
+  twitter = "wsharp07"
+  github = "wsharp07"
+  linkedin = "wsharp07"
+  disqus = "thesharpdev"
+  ga_api_key = "UA-106198224-1"
+  author = "William Sharp"
+  authorwebsite = "https://thesharpdev.com"
+  avatar = "https://www.gravatar.com/avatar/1b312fa276ae1f589d8dd83c4368d31e"
+  bio = "#gladtobehere"
+  subtitle = "DevOps | Agile | Programming | Leadership"
+  #logo = "/path/to/logo"
+  favicon = "/path/to/favicon"
+  custom_css = ["/css/custom.css"]
+
+[[menu.main]]
+    name = "Blog"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Tags"
+    url = "/tags"
+    weight = 2
+
+[related]
+  # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+  threshold = 80
+
+  # To get stable "See also" sections we, by default, exclude newer related pages.
+  includeNewer = false
+
+  # Will lower case keywords in both queries and in the indexes.
+  toLower = false
+
+  [[related.indices]]
+  name = "keywords"
+  weight = 150
+  [[related.indices]]
+  name  = "author"
+  toLower = true
+  weight = 30
+  [[related.indices]]
+  name  = "tags"
+  weight = 100
+  [[related.indices]]
+  name  = "date"
+  weight = 10
+  pattern = "2017"
