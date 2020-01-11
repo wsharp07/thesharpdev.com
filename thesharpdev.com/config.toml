@@ -31,6 +31,9 @@ theme = "hugo_theme_pickles"
     url = "/tags"
     weight = 2
 
+[markup.goldmark.renderer]
+  unsafe= true
+
 [related]
   # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
   threshold = 80

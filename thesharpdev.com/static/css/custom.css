@@ -44,3 +44,9 @@ th {
     font-weight: bold;
     text-align: left;
 }
+
+p.subtext {
+    font-size: 1em;
+    text-align: center;
+    color: #999;
+}

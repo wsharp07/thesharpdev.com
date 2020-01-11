@@ -83,7 +83,7 @@ The output should look something like this:
 
 ## Integrating into our web service
 
-Now that we are connected and reading data, let's add it to our Flask app. Just wrap the above code in a function and all it from the index method.
+Now that we are connected and reading data, let's add it to our Flask app. Just wrap the above code in a function and call it from the index method.
 
 ```python
 from flask import Flask
