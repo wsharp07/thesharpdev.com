@@ -1,7 +1,7 @@
 ---
 title: "Temp/Humidity IoT - AWS IoT"
 date: 2020-01-10T08:47:11+01:00
-draft: false
+draft: true
 ---
 
 ![AWS_IOT](images/aws_iot.png)
