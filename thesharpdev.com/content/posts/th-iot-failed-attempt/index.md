@@ -1,3 +1,9 @@
+---
+title: "Temp/Humidity IoT - AWS IoT"
+date: 2020-01-10T08:47:11+01:00
+draft: false
+---
+
 ![AWS_IOT](images/aws_iot.png)
 
 The first thing you need to do is register the device. You download a package from AWS with certs and a script. Run the script and you're registered. Off to a great start :) 
