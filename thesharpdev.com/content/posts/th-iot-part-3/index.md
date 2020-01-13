@@ -115,7 +115,7 @@ ADAFRUIT_IO_USERNAME = os.getenv("IO_USERNAME")
 DHT_SENSOR = Adafruit_DHT.DHT22
 DHT_PIN = 4
 
-GROUP_NAME = 'mygroup'
+GROUP_NAME = 'dht22'
 
 # Define callback functions which will be called when certain events happen.
 def connected(client):
