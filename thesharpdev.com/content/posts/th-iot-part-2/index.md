@@ -83,7 +83,7 @@ The output should look something like this:
 
 ## Integrating into our web service
 
-Now that we are connected and reading data, let's add it to our Flask app. Just wrap the above code in a function and all it from the index method.
+Now that we are connected and reading data, let's add it to our Flask app. Just wrap the above code in a function and call it from the index method.
 
 ```python
 from flask import Flask
@@ -129,4 +129,4 @@ Then it should show up something like this when you view the web page:
 
 `[01/04/2020 19:31:40] Temp=64.2°F Humidity=35.0%`
 
-## ⏭️  In **__[Part 3](#)__** we will go over sending the data to the cloud
+## ⏭️  In **__[Part 3](/posts/th-iot-part-3)__** we will go over sending the data to the cloud
