@@ -18,7 +18,7 @@ theme = "hugo_theme_pickles"
   bio = "#gladtobehere"
   subtitle = "DevOps | Agile | Programming | Leadership"
   #logo = "/path/to/logo"
-  favicon = "/path/to/favicon"
+  favicon = "/static/favicon.ico"
   custom_css = ["/css/custom.css"]
 
 [[menu.main]]
