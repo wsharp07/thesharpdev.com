@@ -1,14 +1,14 @@
 ---
 title: "Temp/Humidity IoT - Part 3"
 date: 2020-01-10T08:47:11+01:00
-draft: true
+draft: false
 ---
 
 In the [part two](/posts/th-iot-part-2) we assembled the hardware and were able to read data off of the DHT22 sensor. Then we took that data and displayed it on a web page.
 
 During this part we will go over how to send this data to the cloud and chart it. This way we can view trends and live information from the internet.
 
-I was going to just document the successful outcome, but then I realized that would just cover up that sometimes we need to fail and pivot. At the end I'll list out my failed attempt to use AWS IoT. Let's get started!
+I was going to just document the successful outcome, but then I realized that would just cover up that sometimes we need to fail and pivot. In a separate post I'll list out my failed attempt to use AWS IoT. Let's get started!
 
 ## MQTT
 
@@ -175,12 +175,8 @@ stderr_logfile=/var/log/myapp/myapp.err.log
 stdout_logfile=/var/log/myapp/myapp.out.log
 ```
 
-## AWS IoT
+Instead of running Gunicorn and Flask we will just run our file. This will report the data continuously to the Adafruit platform. 
 
-You know that failure I mentioned? This is it. I started by looking at the offerings from cloud providers. Since I already had credits with AWS I looked there first. Unsurprisingly AWS has an IoT offering. It's a very robust platform and designed to control a fleet of IoT devices. It definitely fits the bill, so I jumped in.
+That's it we've successfully setup our app.
 
-![AWS_IOT](images/aws_iot.png)
-
-The first thing you need to do is register the device. You download a package from AWS with certs and a script. Run the script and you're registered. Off to a great start :) 
-
-Next I wanted to set up a Python script to send the data. This is where things started to get confusing. The examples out of the box didn't work. I received a "Connection Failed" error. Alright, so I must have copied the code wrong. After about 30 minutes of combing the code I couldn't find the problem, so off to Google. Turns out you need to add the "client" (device) to the Policy file allowing it to connect. AWS has Policy files which control the access to different actions within AWS.  
+## ⏭️  In **__[Part 4](#)__** we will look at using the Adafruit IO API to create alerts based on this data
