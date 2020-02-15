@@ -1,0 +1,22 @@
+{
+  "name": "thesharpdev",
+  "version": "1.0.0",
+  "description": "The 'thesharpdev.com' website content. Static site managed with Hugo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./run-dev.sh & cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wsharp07/thesharpdev.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wsharp07/thesharpdev.com/issues"
+  },
+  "homepage": "https://github.com/wsharp07/thesharpdev.com#readme",
+  "devDependencies": {
+    "cypress": "^4.0.2"
+  }
+}
