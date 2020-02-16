@@ -24,3 +24,4 @@ resources/sunset.jpg
 
 vendor
 node_modules
+cypress/videos

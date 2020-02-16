@@ -4,7 +4,8 @@
   "description": "The 'thesharpdev.com' website content. Static site managed with Hugo.",
   "main": "index.js",
   "scripts": {
-    "test": "./run-dev.sh & cypress open"
+    "test": "./run-test.sh",
+    "testlive": "./run-dev.sh & cypress open"
   },
   "repository": {
     "type": "git",
