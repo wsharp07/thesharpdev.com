@@ -14,11 +14,14 @@ jobs:
         with:
           hugo-version: '0.61.0'
 
+      - name: Run Server
+        run: ./run-dev.sh
+
       - name: Use Node.js 13.8.0
         uses: actions/setup-node@v1
         with:
           node-version: 13.8.0
       - run: npm install
-      - run: npm test
+      - run: npm run testci
         env:
           CI: true
