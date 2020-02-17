@@ -6,7 +6,7 @@ draft: false
 
 In the [part two](/posts/th-iot-part-2) we assembled the hardware and were able to read data off of the DHT22 sensor. Then we took that data and displayed it on a web page.
 
-During this part we will go over how to send this data to the cloud and chart it. This way we can view trends and live information from the internet.
+During this part, we will go over how to send this data to the cloud and chart it. This way we can view trends and live information from the internet.
 
 I was going to just document the successful outcome, but then I realized that would just cover up that sometimes we need to fail and pivot. In a separate post I'll list out my failed attempt to use AWS IoT. Let's get started!
 
@@ -179,4 +179,4 @@ Instead of running Gunicorn and Flask we will just run our file. This will repor
 
 That's it we've successfully setup our app.
 
-## ⏭️  In **__[Part 4](#)__** we will look at using the Adafruit IO API to create alerts based on this data
+## ⏭️  In **__[Part 4](#)__** we will look at using the Adafruit IO API to create a mobile app
