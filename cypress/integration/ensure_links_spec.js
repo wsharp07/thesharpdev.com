@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-describe('My First Test', function() {
+describe('Part 4 E2E', function() {
   it('Visit part 4 and ensure part 3 link', function() {
     cy.visit('/');
     cy.contains('Temp/Humidity IoT - Part 4').click();
