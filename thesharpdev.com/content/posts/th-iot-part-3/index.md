@@ -2,6 +2,7 @@
 title: "Temp/Humidity IoT - Part 3"
 date: 2020-01-10T08:47:11+01:00
 draft: false
+hideWordCount: true
 ---
 
 In the [part two](/posts/th-iot-part-2) we assembled the hardware and were able to read data off of the DHT22 sensor. Then we took that data and displayed it on a web page.

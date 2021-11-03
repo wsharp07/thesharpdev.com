@@ -1,7 +1,8 @@
 ---
-title: "Temp/Humidity IoT - Part 42"
+title: "Temp/Humidity IoT - Part 4"
 date: 2020-02-01T08:47:11+01:00
 draft: false
+hideWordCount: true
 ---
 
 In the [part three](/posts/th-iot-part-3) we set up a daemon to send data to Adafruit IO. This gave us a slick dashboard to view live and historical data.

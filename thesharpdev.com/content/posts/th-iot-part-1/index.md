@@ -2,6 +2,7 @@
 title: "Temp/Humidity IoT - Part 1"
 date: 2019-12-31T08:47:11+01:00
 draft: false
+hideWordCount: true
 ---
 
 Winters in the midwest can be pretty dry, and I'm particularly susceptible to the dry air. In order to keep the humidity at the ideal level I went on the hunt for a humidity sensor. Then I thought to myself, "that's a bit too easy", and decided I could build my own.

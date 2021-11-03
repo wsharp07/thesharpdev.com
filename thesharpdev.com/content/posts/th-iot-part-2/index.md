@@ -2,6 +2,7 @@
 title: "Temp/Humidity IoT - Part 2"
 date: 2020-01-05T08:47:11+01:00
 draft: false
+hideWordCount: true
 ---
 
 In the [part one](/posts/th-iot-part-1) we focused on getting the operating system installed and setting up our web service. In this part we will focus on attaching the sensor and reading data from it.
