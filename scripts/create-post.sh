@@ -10,12 +10,12 @@ while getopts t:f: flag
 do
     case "${flag}" in
         t) title=${OPTARG};;
-        f) folder_name=${OPTARG};;
     esac
 done
 
 # Set variables
-FOLDER_PATH=$ROOT_DIR/$POST_PATH/$folder_name
+FOLDER_NAME=`echo ${title// /_} | awk '{print tolower($0)}'`
+FOLDER_PATH=$ROOT_DIR/$POST_PATH/$FOLDER_NAME
 CURRENT_DATE=$(date +'%Y-%m-%d')
 
 # Create new post folder

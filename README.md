@@ -19,5 +19,5 @@ $ yarn dev
 
 Adds a new post to the posts directory
 ```bash
-$ yarn create:post -t "Title" -f folder_name
+$ yarn create:post -t "Title"
 ```
