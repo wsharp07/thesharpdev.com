@@ -4,8 +4,10 @@
   "description": "The 'thesharpdev.com' website content. Static site managed with Hugo.",
   "main": "index.js",
   "scripts": {
-    "test": "./run-test.sh",
-    "testlive": "./run-dev.sh & cypress open"
+    "dev": "hugo server -s thesharpdev.com -t hugo_theme_pickles -w -D -F",
+    "create:post": "./scripts/create-post.sh",
+    "test": "./scripts/run-test.sh",
+    "test:live": "./scripts/run-dev.sh & cypress open"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,8 @@
   "devDependencies": {
     "cypress": "^8.7.0"
   },
-  "packageManager": "yarn@3.1.0"
+  "packageManager": "yarn@3.1.0",
+  "dependencies": {
+    "hugo-bin": "^0.76.1"
+  }
 }
