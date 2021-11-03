@@ -25,3 +25,11 @@ resources/sunset.jpg
 vendor
 node_modules
 cypress/videos
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions

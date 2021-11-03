@@ -3,12 +3,12 @@ name: Build & Deploy
 on:
   push:
     branches:
-    - 'master'
+    - 'main'
     - 'build/**'
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v1
@@ -18,7 +18,7 @@ jobs:
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
       with:
-        hugo-version: '0.61.0'
+        hugo-version: '0.89.0'
 
     - name: Build
       working-directory: ./thesharpdev.com

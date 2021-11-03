@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/wsharp07/thesharpdev.com#readme",
   "devDependencies": {
-    "cypress": "^4.0.2"
-  }
+    "cypress": "^8.7.0"
+  },
+  "packageManager": "yarn@3.1.0"
 }
