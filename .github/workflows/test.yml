@@ -20,12 +20,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18.x
+          cache: 'npm'
       
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
 
       - name: Run Server
-        run: yarn dev
+        run: npm run dev
 
       - name: Cypress run
         uses: cypress-io/github-action@v5.0.8
