@@ -21,16 +21,12 @@ jobs:
         with:
           node-version: 18.x
           cache: 'npm'
-      
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run Server
-        run: npm run dev
+      - run: npm ci
 
       - name: Cypress run
         uses: cypress-io/github-action@v5.0.8
         with:
+          start: npm run dev
           browser: chrome
           headless: true
           record: false
