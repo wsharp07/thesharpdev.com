@@ -21,10 +21,10 @@ jobs:
         hugo-version: '0.98.0'
 
     - name: Setup Node 18.x
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18.x
-          cache: 'npm'
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.x
+        cache: 'npm'
     - run: npm ci
 
     - name: Build
