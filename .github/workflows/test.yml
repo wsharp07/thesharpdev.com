@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   pull_request:
 jobs:
-  cypress-run:
+  E2E:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,5 +28,4 @@ jobs:
         with:
           start: npm run dev
           browser: chrome
-          headless: true
           record: false
