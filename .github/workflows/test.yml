@@ -14,6 +14,11 @@ jobs:
         with:
           hugo-version: '0.98.0'
 
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+        run: yarn install
+
       - name: Run Server
         run: yarn dev
 
