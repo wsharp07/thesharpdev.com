@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/wsharp07/thesharpdev.com.git"
   },
-  "author": "",
+  "author": "William Sharp",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wsharp07/thesharpdev.com/issues"
@@ -23,7 +23,7 @@
     "cypress": "^12.5.1",
     "npm-run-all": "^4.1.5"
   },
-  "packageManager": "yarn@3.1.0",
+  "packageManager": "npm@9.3.1",
   "dependencies": {
     "hugo-bin": "^0.98.0"
   }
