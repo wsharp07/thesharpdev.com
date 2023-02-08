@@ -1,25 +1,31 @@
-name: End-to-end tests
-on: [pull_request]
+name: 'Tests'
+on:
+  workflow_dispatch:
+  pull_request:
 jobs:
-  cypress-run:
+  E2E:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3.3.0
         with:
           submodules: true
 
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v2.6.0
         with:
-          hugo-version: '0.61.0'
+          hugo-version: '0.98.0'
 
-      - name: Run Server
-        run: ./run-dev.sh &
+      - name: Setup Node 18.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'npm'
+      - run: npm ci
 
       - name: Cypress run
-        uses: cypress-io/github-action@v1
+        uses: cypress-io/github-action@v5.0.8
         with:
+          start: npm run dev
           browser: chrome
-          headless: true
           record: false
