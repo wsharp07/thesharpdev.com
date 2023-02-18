@@ -4,7 +4,7 @@
   "description": "The 'thesharpdev.com' website content. Static site managed with Hugo.",
   "main": "index.js",
   "scripts": {
-    "dev": "hugo server -s thesharpdev.com -t hugo_theme_pickles -w -D -F",
+    "dev": "hugo server -s thesharpdev.com -t hugo_theme_pickles -w -D -F --disableFastRender",
     "create:post": "./scripts/create-post.sh",
     "test": "run-p dev cypress",
     "cypress": "cypress open",

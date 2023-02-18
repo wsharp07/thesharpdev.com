@@ -6,11 +6,11 @@ describe('Part 4 E2E', function() {
     cy.contains('Temp/Humidity IoT - Part 4').click();
 
     cy.url()
-      .should('include', '/posts/th-iot-part-4');
+      .should('include', '/posts/2020/th-iot-part-4');
 
     cy.contains('part three').click();
 
     cy.url()
-      .should('include', '/posts/th-iot-part-3');
+      .should('include', '/posts/2020/th-iot-part-3');
   })
 });

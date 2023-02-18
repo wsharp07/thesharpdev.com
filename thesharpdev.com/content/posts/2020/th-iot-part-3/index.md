@@ -5,7 +5,7 @@ draft: false
 hideWordCount: true
 ---
 
-In the [part two](/posts/th-iot-part-2) we assembled the hardware and were able to read data off of the DHT22 sensor. Then we took that data and displayed it on a web page.
+In the [part two](/posts/2020/th-iot-part-2) we assembled the hardware and were able to read data off of the DHT22 sensor. Then we took that data and displayed it on a web page.
 
 During this part, we will go over how to send this data to the cloud and chart it. This way we can view trends and live information from the internet.
 
@@ -180,4 +180,4 @@ Instead of running Gunicorn and Flask we will just run our file. This will repor
 
 That's it we've successfully setup our app.
 
-## ⏭️  In **__[Part 4](#)__** we will look at using the Adafruit IO API to create a mobile app
+## ⏭️  In **__[Part 4](/posts/2020/th-iot-part-4)__** we will look at using the Adafruit IO API to create a mobile app

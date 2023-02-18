@@ -5,16 +5,36 @@
 ROOT_DIR=thesharpdev.com
 POST_PATH=content/posts
 
-# Handle args
-while getopts t:f: flag
-do
-    case "${flag}" in
-        t) title=${OPTARG};;
-    esac
+# Set default values for title and folder
+title=""
+folder=""
+
+# Process command line arguments
+while getopts "t:f:" opt; do
+  case $opt in
+    t)
+      title="$OPTARG"
+      ;;
+    f)
+      folder="$OPTARG"
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+  esac
 done
 
-# Set variables
-FOLDER_NAME=`echo ${title// /_} | awk '{print tolower($0)}'`
+# Get the current ISO date
+today=$(date +%Y%m%d)
+
+# Santize the title
+lower_case_string="$(echo "$title" | tr '[:upper:]' '[:lower:]')"
+no_space_string=${lower_case_string// /-}
+
+# Set the folder name
+FOLDER_NAME="$today-$no_space_string"
+
 FOLDER_PATH=$ROOT_DIR/$POST_PATH/$FOLDER_NAME
 CURRENT_DATE=$(date +'%Y-%m-%d')
 

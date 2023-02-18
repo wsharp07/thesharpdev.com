@@ -5,7 +5,7 @@ draft: false
 hideWordCount: true
 ---
 
-In the [part three](/posts/th-iot-part-3) we set up a daemon to send data to Adafruit IO. This gave us a slick dashboard to view live and historical data.
+In the [part three](/posts/2020/th-iot-part-3) we set up a daemon to send data to Adafruit IO. This gave us a slick dashboard to view live and historical data.
 
 In this part, we will go through setting up a mobile app to give us a quick way to look at the live data on the go. Someone was telling me how easy React Native was to get up and running with, so I decided to give it a shot.
 
