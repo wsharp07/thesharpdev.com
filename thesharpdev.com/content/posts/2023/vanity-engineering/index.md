@@ -37,9 +37,13 @@ The following day the engineering team gets questions:
 
 In most cases, the technology team would have already considered this and either is in favor (read as "we've been saying this for a while now") or has reasons for not moving in that direction.
 
+These sorts of questions on their own are absolutely fine. The team can educate management on the why behind not using this technology. Vanity Engineering happens when management requires the team to move in a direction that doesn't have a practical reason. 
+
+Management in this case was used as an example. However Vanity Engineering can also arise from engineers in a position of influence. 
+
 ## Why does it happen?
 
-Just like we have "keeping up with the Joneses" to refer to your lifestyle choices. Vanity Engineering often comes from a handful of things:
+Just like we have "keeping up with the Joneses" to refer to lifestyle choices. Vanity Engineering often comes from a handful of things:
 
 1. Expecting that doing the thing that made someone else's software successful will also make your software successful.
 2. Insecurity about not looking "cool" or "trendy" when talking about your software.
@@ -51,19 +55,19 @@ Overall, Vanity Engineering happens when the focus shifts away from practical ne
 
 ### Focus on the Problem
 
-Start any engineering project by clearly defining the problem you are trying to solve. Keep the focus on the practical needs of the end user and design the solution to address those needs. This will help you stay grounded in the purpose of the project and avoid getting sidetracked by non-essential features or design elements.
+Start engineering projects by clearly defining the problem you are trying to solve. Keep the focus on the practical needs of the end user and design the solution to address those needs. This will help you stay grounded in the purpose of the project and avoid getting sidetracked by non-essential features or design elements.
 
 ### Prioritize Value Delivery
 
-Make sure that the technology you develop is user-friendly, efficient, and effective in meeting its intended purpose. Consider feedback from users, run tests, and iterate on the design as necessary to ensure that it is useful and practical.
+Make sure that the technology you develop is user-friendly, efficient, and effective in meeting its intended purpose. Consider feedback from users, run tests, and iterate on the design as necessary to ensure that it is useful and provides value.
 
 ### Set Realistic Goals and Budgets 
 
-Avoid over-engineering by setting realistic goals and budgets for your project. Be mindful of the resources you have available, and avoid spending excessively on non-essential features or components. This will help keep the project on track and ensure that you are delivering value to end users, rather than simply trying to impress others.
+Avoid over-engineering by setting realistic goals and budgets for your project. Be mindful of the resources you have available, and avoid spending excessively on non-essential features or components. This will help keep the project on track and ensure that you are delivering value to users, rather than simply trying to impress others.
 
 ### Encourage Collaboration and Feedback
 
-Work in collaboration with others, and seek feedback from different stakeholders, including users, experts, and colleagues. This can help you stay accountable to the project's goals and ensure that the technology you are developing is useful, user-friendly, and accessible. Additionally, incorporating feedback from others can help you identify areas where you may be veering toward vanity engineering, and allow you to course-correct before it becomes a bigger problem.
+Work in collaboration with others, and seek feedback from different stakeholders, including users, product management, and colleagues. This can help you stay accountable to the project's goals and ensure that the technology you are developing is providing the expected value. Additionally, incorporating feedback from others can help you identify areas where you may be veering toward vanity engineering, and allows you to course-correct before it becomes a bigger problem.
 
 ## What's Next?
 
