@@ -11,7 +11,7 @@ hideWordCount: true
 
 > **Vanity Engineering (noun):** The practice of designing or implementing a solution to a problem that is not necessarily required or needed, but is done primarily for the purpose of enhancing one's personal image or reputation.
 
-Vanity engineering projects often result in over-engineered solutions that are difficult to maintain and often don't serve any real purpose. 
+Vanity engineering projects result in over-engineered solutions that are difficult to maintain and often don't serve any real purpose. 
 
 It can also be used to describe situations where a project or solution is designed or developed in a way that prioritizes aesthetics over functionality or practicality.
 
@@ -35,7 +35,7 @@ The following day the engineering team gets questions:
 - "I read Microservices will solve 'x' problem that we are having"
 - "Netflix, Amazon, Uber, Twitter, etc. use Microservices. We should too."
 
-In most cases, the technology team would have already considered this and either is in favor (read as "we've been saying this for a while now") or has reasons for not moving in that direction.
+In most cases, the technology team would have already considered this and either is in favor (read as "we've been saying this for a while now") or has reasons for not moving in that direction. In this case it was to not move forward.
 
 These sorts of questions on their own are absolutely fine. The team can educate management on the why behind not using this technology. Vanity Engineering happens when management requires the team to move in a direction that doesn't have a practical reason. 
 
