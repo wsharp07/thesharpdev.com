@@ -39,7 +39,7 @@ npm test
 
 Adds a new post to the posts directory
 ```bash
-npm run create:post -t "Title"
+npm run create:post -- -t "Title"
 ```
 
 ### Github Actions
