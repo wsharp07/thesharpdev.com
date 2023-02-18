@@ -5,7 +5,7 @@ draft: true
 hideWordCount: true
 ---
 
-![Materials](images/gate.jpg)
+![Gate](images/gate.jpg)
 
 ## What is Vanity Engineering?
 
