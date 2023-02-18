@@ -1,6 +1,6 @@
 ---
 title: "Vanity Engineering"
-date: 2023-02-08
+date: 2023-02-17
 draft: false
 hideWordCount: true
 ---
