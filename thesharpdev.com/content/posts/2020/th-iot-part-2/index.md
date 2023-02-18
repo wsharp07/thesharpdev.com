@@ -5,7 +5,7 @@ draft: false
 hideWordCount: true
 ---
 
-In the [part one](/posts/th-iot-part-1) we focused on getting the operating system installed and setting up our web service. In this part we will focus on attaching the sensor and reading data from it.
+In the [part one](/posts/2020/th-iot-part-1) we focused on getting the operating system installed and setting up our web service. In this part we will focus on attaching the sensor and reading data from it.
 
 ## Some Assembly Required
 There are several ways you can attach the sensor (e.g: bread board, connector wires, solder directly to pinouts, etc). I chose to use connector wires so I could move things around easily if I needed to.

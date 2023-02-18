@@ -140,4 +140,4 @@ stdout_logfile=/var/log/myapp/myapp.out.log
 
 
 
-## ⏭️  In **__[Part 2](/posts/th-iot-part-2)__** we will look at attaching the sensor and reading data
+## ⏭️  In **__[Part 2](/posts/2020/th-iot-part-2)__** we will look at attaching the sensor and reading data
